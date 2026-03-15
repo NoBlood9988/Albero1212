@@ -1,0 +1,114 @@
+
+
+body{
+    padding: 40px; 
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url("img/backgroundgif.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.top-display{
+    background-color:white ;
+    border: 1px black solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 600px; 
+    display: flex;
+    flex-direction: column;
+    
+}
+.top-display p{
+    padding: 10px;
+    text-align: justify;
+    
+}
+.top-display h1{
+    padding: 10px;
+    text-align: justify;
+}
+
+
+.top-buttons{
+    justify-content: space-between;
+    
+    display: flex;
+    flex-direction: row;
+}
+.top-buttons button{
+    width: 280px;
+    height: 60px;
+    border-radius: 5px;
+    gap: 10px;
+}
+#pick{
+    background-color: rgba(32, 74, 157, 0.733);
+    color: white;
+    font-weight: bolder;
+    border: 1px black solid;
+
+}
+#random{
+    background-color: rgba(11, 11, 11, 0.1);
+    color: rgba(32, 74, 157, 0.733);
+    font-weight: bolder;
+    border: 1px rgba(32, 74, 157, 0.733) solid;
+}
+
+
+
+
+
+
+.game-grid {
+    display: grid;   
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px; 
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; 
+
+}
+
+.card {
+    background-color: #1a1a2e;
+    border-radius: 12px;
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+    border: 2px purple solid;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+.card img {
+    width: 100%; 
+    height: 180px;
+    object-fit: cover; 
+}
+
+.card-info {
+    padding: 15px;
+    color: white;
+}
+
+.card-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #a0a0b5; 
+}
